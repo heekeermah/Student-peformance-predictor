@@ -39,7 +39,6 @@ input_data = np.array([[study_hours_per_week, attendance_rate, previous_grades, 
 
 if st.button("Predict"):
     prediction = model.predict(input_data)
-    st.write("Prediction:", prediction)
     
     # Output
     if prediction == 1:
@@ -51,3 +50,4 @@ if st.button("Predict"):
 st.write('This aplication was created for the technical deepdive 2.0 final assessment')
 
 st.write('BY Hikma Yahya')
+
