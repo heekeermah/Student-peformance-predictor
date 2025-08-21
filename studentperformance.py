@@ -39,8 +39,15 @@ input_data = np.array([[study_hours_per_week, attendance_rate, previous_grades, 
 
 if st.button("Predict"):
     prediction = model.predict(input_data)
-    st.success(f"Student will: {'Pass' if prediction[0] == 1 else 'Fail'}")
+    st.write("Prediction:", prediction)
+    
+    # Output
+    if prediction == 1:
+        st.success("Student has high probability of PASSING")
+    else:
+        st.error("Student has high probability of FAILING")
 
 # footer
 st.write('This aplication was created for the technical deepdive 2.0 final assessment')
+
 st.write('BY Hikma Yahya')
