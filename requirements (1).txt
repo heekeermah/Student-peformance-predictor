@@ -1,9 +1,0 @@
-streamlit
-numpy
-pandas
-scikit-learn
-plotly
-googletrans==4.0.0rc1
-gtts
-google-generativeai
-fpdf
